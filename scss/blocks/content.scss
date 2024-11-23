@@ -1,0 +1,25 @@
+.content {
+  margin-top: 50px;
+
+  &__education {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-bottom: $brd;
+  }
+  &__text {
+    text-align: center;
+  }
+  .education__date {
+    display: flex;
+    align-items: center;
+    img {
+      height: 20px;
+      width: auto;
+      padding-right: 5px;
+    }
+  }
+  // TODO: сделать темную тему
+  // TODO: сделать миксин для строчек
+}

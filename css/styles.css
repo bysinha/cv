@@ -1,0 +1,248 @@
+@charset "UTF-8";
+/**
+ * Сброс стилей
+ **/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@50..200,200..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+input {
+  outline: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+/*Basic style*/
+body {
+  font-family: "Roboto", sans-serif;
+  background: #fff;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.wrap {
+  min-width: 320px;
+  max-width: 1180px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.wrap__content {
+  min-width: 320px;
+  max-width: 1300px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+p,
+a,
+button {
+  color: #000;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding-bottom: 100px;
+  border-bottom: 2px solid #E2E8F0;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  background: url("../../assets/img/header-1.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(1px);
+  overflow: hidden;
+}
+.header__text-block {
+  position: relative;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  z-index: 1;
+}
+.header__text-block--name {
+  font-weight: 800;
+  font-size: 80px;
+  color: #334155;
+  margin-top: 100px;
+}
+.header__text-block--skill {
+  font-weight: 500;
+  font-size: 40px;
+  color: #64748B;
+  margin-top: 10px;
+}
+.header__contact {
+  display: flex;
+  margin-left: 200px;
+  margin-top: 50px;
+  flex-grow: 1;
+}
+.header__contact-item {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-right: 30px;
+  text-decoration: none;
+}
+.header__contact-item p {
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 157%;
+  color: #334155;
+}
+.header__contact-item img {
+  padding-right: 2px;
+  width: 20px;
+  height: auto;
+}
+.header__info-links {
+  display: flex;
+  max-width: 760px;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.header__info-links .links__btns {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  display: flex;
+  border-radius: 30px;
+  padding: 10px 16px;
+  align-items: center;
+  margin-right: 10px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.header__info-links .links__btns img {
+  margin-right: 6px;
+  margin-top: 1px;
+  width: 19px;
+}
+.header__info-links .links__btns--purple {
+  border: 2px solid #7c3aed;
+  background: #f6f3ff;
+  color: #7c3aed;
+}
+.header__info-links .links__btns--blue {
+  border: 2px solid #0a66c2;
+  background: #f1f8ff;
+  color: #0a66c2;
+}
+.header__info-links .links__btns--orange {
+  border: 2px solid #f24e1e;
+  background: #fff4f1;
+  color: #f24e1e;
+}
+.header__info-links .links__btns--black {
+  border: 2px solid #222;
+  background: #f2f2f2;
+  color: #222;
+}
+
+.content {
+  margin-top: 50px;
+}
+.content__education {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  border-bottom: 2px solid #E2E8F0;
+}
+.content__text {
+  text-align: center;
+}
+.content .education__date {
+  display: flex;
+  align-items: center;
+}
+.content .education__date img {
+  height: 20px;
+  width: auto;
+  padding-right: 5px;
+}
+
+.bold {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #334155;
+}
+
+.regular {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #334155;
+}
+
+.date {
+  font-family: "Inconsolata", monospace;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: -0.05em;
+  color: #334155;
+}
+
+/*# sourceMappingURL=styles.css.map */

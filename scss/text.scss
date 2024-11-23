@@ -1,0 +1,21 @@
+.bold {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: $light-text-primary;
+}
+
+.regular {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: $light-text-primary;
+}
+
+.date {
+  font-family: $second-family, monospace;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: -0.05em;
+  color: $light-text-primary;
+}
